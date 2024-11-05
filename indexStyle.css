@@ -1,0 +1,107 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('Gamecourt.jpeg');
+    background-size: cover; 
+    background-position: center center; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    text-align: center;
+}
+
+/* Container for the game */
+.gameContainer, .hoopContainer, .remarks, .score, .missed, footer {
+    width: 100%;
+}
+
+/* Basketball Styling */
+.basketball {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #ff5700; /* Orange color to resemble basketball */
+    margin: 10px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.basketball:active {
+    transform: scale(0.95);
+}
+
+/* Hoop Styling */
+.hoopContainer {
+    position: relative;
+    width: 150px;
+    height: 120px;
+    margin-top: 30px;
+}
+
+.hoop {
+    width: 120px;
+    height: 10px;
+    background-color: #c0c0c0;
+    border-radius: 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Game Layout */
+.gameContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.remarks, .score, .missed {
+    text-align: center;
+    margin-top: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Footer Styling */
+footer {
+    position: absolute;
+    bottom: 20px;
+    text-align: center;
+    width: 100%;
+    font-size: 14px;
+    color: #777;
+}
+
+footer p {
+    background-color: rgba(255, 255, 255, 0.7); /* Light semi-transparent background */
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 2px solid #4a90e2; /* Blue border */
+    display: inline-block;
+}
+
+.designer-name {
+    color: #4a90e2; /* Light blue color for your name */
+    font-weight: bold;
+}
